@@ -1,0 +1,80 @@
+# =================
+# Antigen
+# =================
+
+source /opt/homebrew/share/antigen/antigen.zsh
+
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles from the default repo (oh-my-zsh)
+antigen bundle git
+antigen bundle command-not-found
+
+# Load bundles from external repos
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle kiurchv/asdf.plugin.zsh
+
+# Select theme
+antigen theme romkatv/powerlevel10k
+
+antigen apply
+
+# =================
+# Git
+# =================
+
+alias gl='glg $(git show-ref | cut -d " " -f 2 | grep -v stash$) HEAD'
+alias glw='glp --word-diff'
+alias gsw='git show --format=fuller --stat --patch'
+alias gco='git checkout'
+alias gcp='git checkout -p'
+alias gs='git status --untracked-files=all'
+alias gst='git stash --include-untracked --keep-index'
+alias gstp='git stash pop'
+alias gd='git diff -M40'
+alias gdw='gd --word-diff=color --word-diff-regex="[A-z0-9_-]+"'
+alias gbdw='gbd --word-diff=color --word-diff-regex="[A-z0-9_-]+"'
+alias gds='gd --cached'
+alias gdsw='gdw --cached'
+alias gar='git reset HEAD'
+alias garp='git reset -p HEAD'
+alias ga='git add'
+alias gap='git add -p'
+alias gc='git commit -v && bch'
+alias gca='gc --amend'
+alias gp='git push'
+alias gpt='git push -u origin $(git_current_branch)'
+alias gws='git wip save WIP --untracked'
+alias gwd='git update-ref -d refs/wip/$(git_current_branch)'
+alias gdt='git difftool'
+alias grl="git reflog --format='%C(auto)%h %<|(17)%gd %C(blue)%ci%C(reset) %gs'"
+alias gtl='grep -v -F -f <(git ls-remote --tags origin | cut -d / -f 3) <(git tag)'
+alias gcs='git commit --allow-empty --squash'
+alias lg='lazygit'
+
+# helper for git aliases
+function git_current_branch()
+{
+  git symbolic-ref --short -q HEAD
+}
+
+# git add untracked
+# gau() {
+#   git ls-files --other --exclude-standard -z "$@" | xargs -0 git add -Nv
+# }
+
+# =================
+# Export
+# =================
+
+export PATH=/opt/homebrew/bin:$PATH
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$HOME/.local/bin:$PATH
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

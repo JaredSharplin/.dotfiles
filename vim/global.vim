@@ -1,2 +1,0 @@
-set background=light
-colorscheme solarized8_light_high_nate
