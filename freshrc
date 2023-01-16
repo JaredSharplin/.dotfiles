@@ -15,3 +15,6 @@ fresh-options --file=~/.zshrc --marker
   fresh freshshell/fresh contrib/source-build.sh
 fresh-options
 
+# Neovim
+fresh nvim --file=~/.config/nvim/
+

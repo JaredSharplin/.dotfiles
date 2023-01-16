@@ -69,12 +69,14 @@ function git_current_branch()
 # =================
 # Export
 # =================
+alias vim='nvim'
 
 export PATH=/opt/homebrew/bin:$PATH
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$HOME/.local/bin:$PATH
+export EDITOR='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
