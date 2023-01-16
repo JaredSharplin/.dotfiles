@@ -25,6 +25,10 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('kdheepak/lazygit.nvim')
 
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
+
   use {
     "folke/which-key.nvim",
     config = function()
