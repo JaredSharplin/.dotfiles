@@ -25,9 +25,9 @@ vim.keymap.set("n", "<leader>Y", "\"+Y", {desc = "Copy to System Clipboard"})
 
 vim.keymap.set("n", "Q", "<Nop>", {desc = "Disable Ex Mode"})
 
--- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz", {desc = "Next Error"})
--- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz", {desc = "Previous Error"})
--- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", {desc = "Next Error"})
--- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", {desc = "Previous Error"})
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz", {desc = "Next Error"})
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz", {desc = "Previous Error"})
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", {desc = "Next Error"})
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", {desc = "Previous Error"})
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {desc = "Search and Replace"})
