@@ -25,9 +25,14 @@ vim.keymap.set("n", "<leader>Y", "\"+Y", {desc = "Copy to System Clipboard"})
 
 vim.keymap.set("n", "Q", "<Nop>", {desc = "Disable Ex Mode"})
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz", {desc = "Next Error"})
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz", {desc = "Previous Error"})
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", {desc = "Next Error"})
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", {desc = "Previous Error"})
+vim.keymap.set("n", "<C-h>", "<C-w>h", {desc = "Move Left"})
+vim.keymap.set("n", "<C-j>", "<C-w>j", {desc = "Move Down"})
+vim.keymap.set("n", "<C-k>", "<C-w>k", {desc = "Move Up"})
+vim.keymap.set("n", "<C-l>", "<C-w>l", {desc = "Move Right"})
+
+-- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz", {desc = "Next Error"})
+-- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz", {desc = "Previous Error"})
+-- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", {desc = "Next Error"})
+-- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", {desc = "Previous Error"})
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {desc = "Search and Replace"})
