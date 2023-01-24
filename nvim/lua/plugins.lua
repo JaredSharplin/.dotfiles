@@ -87,5 +87,6 @@ return require('packer').startup(function(use)
   use("f-person/git-blame.nvim")
 
   use("tpope/vim-commentary")
+  use("tpope/vim-surround")
 end)
 
