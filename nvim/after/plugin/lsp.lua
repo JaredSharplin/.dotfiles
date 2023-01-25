@@ -15,5 +15,13 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-e>'] = cmp.mapping.close(),
 })
 
+lsp.ensure_installed({
+  'sorbet',
+  'sumneko_lua',
+  'eslint',
+})
+
+lsp.nvim_workspace()
+
 lsp.setup()
 
