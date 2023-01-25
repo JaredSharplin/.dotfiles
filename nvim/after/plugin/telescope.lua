@@ -7,3 +7,18 @@ vim.keymap.set('n', '<leader>fw', builtin.grep_string, {desc = "Find Word Under 
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = "Find Buffers"})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {desc = "Find Help Tags"})
 
+require('telescope').setup{
+  defaults = {
+    file_ignore_patterns = {
+      "%.rbi",
+      "%.png",
+      "%.jpg",
+      "%.json",
+      "%.lock",
+      "%.yml",
+      "%.txt",
+      "%.x.js",
+      "%.x.x.js"
+    },
+  }
+}
