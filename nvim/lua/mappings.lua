@@ -30,9 +30,11 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", {desc = "Move Down"})
 vim.keymap.set("n", "<C-k>", "<C-w>k", {desc = "Move Up"})
 vim.keymap.set("n", "<C-l>", "<C-w>l", {desc = "Move Right"})
 
--- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz", {desc = "Next Error"})
--- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz", {desc = "Previous Error"})
--- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", {desc = "Next Error"})
--- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", {desc = "Previous Error"})
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz", {desc = "Next Error"})
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz", {desc = "Previous Error"})
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", {desc = "Next Error"})
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", {desc = "Previous Error"})
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {desc = "Search and Replace"})
+
+vim.keymap.set("n", "<leader>t", ":A<CR>", {desc = "Navigate to Test File"})
