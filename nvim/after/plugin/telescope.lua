@@ -15,7 +15,6 @@ require('telescope').setup{
       "%.jpg",
       "%.json",
       "%.lock",
-      "%.yml",
       "%.txt",
       "%.x.js",
       "%.x.x.js"
