@@ -38,3 +38,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", {desc = "Previous Error"})
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {desc = "Search and Replace"})
 
 vim.keymap.set("n", "<leader>t", ":A<CR>", {desc = "Navigate to Test File"})
+
+vim.keymap.set("v", "<", "<gv", {desc = "Outdent and Reselect"})
+vim.keymap.set("v", ">", ">gv", {desc = "Indent and Reselect"})
+vim.keymap.set("n", "=", "v=", {desc = "Indent Current Line and Reselect"})
