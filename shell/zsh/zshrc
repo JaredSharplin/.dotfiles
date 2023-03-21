@@ -27,7 +27,6 @@ antigen apply
 # =================
 
 alias gl='glg $(git show-ref | cut -d " " -f 2 | grep -v stash$) HEAD'
-alias glw='glp --word-diff'
 alias gsw='git show --format=fuller --stat --patch'
 alias gco='git checkout'
 alias gcp='git checkout -p'
@@ -43,16 +42,12 @@ alias gar='git reset HEAD'
 alias garp='git reset -p HEAD'
 alias ga='git add'
 alias gap='git add -p'
-alias gc='git commit -v && bch'
+alias gc='git commit -v'
 alias gca='gc --amend'
 alias gp='git push'
 alias gpt='git push -u origin $(git_current_branch)'
-alias gws='git wip save WIP --untracked'
-alias gwd='git update-ref -d refs/wip/$(git_current_branch)'
-alias gdt='git difftool'
-alias grl="git reflog --format='%C(auto)%h %<|(17)%gd %C(blue)%ci%C(reset) %gs'"
-alias gtl='grep -v -F -f <(git ls-remote --tags origin | cut -d / -f 3) <(git tag)'
-alias gcs='git commit --allow-empty --squash'
+alias gwip='git add -A; git commit -m "WIP"'
+alias gundo='git reset HEAD~1'
 alias lg='lazygit'
 
 # helper for git aliases
