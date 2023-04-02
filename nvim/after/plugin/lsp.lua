@@ -61,6 +61,7 @@ lsp.on_attach(function(client, bufnr)
   set_keymaps(bufnr)
 end)
 
+-- Flow is not available in mason, so we need to install it manually
 require('lspconfig').flow.setup({
   on_attach = function(client, bufnr)
     set_keymaps(bufnr)
