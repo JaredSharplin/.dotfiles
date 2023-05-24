@@ -55,6 +55,7 @@ local function set_keymaps(bufnr)
   vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, {buffer = bufnr, remap = false, desc = "References"})
   vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, {buffer = bufnr, remap = false, desc = "Rename"})
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, {buffer = bufnr, remap = false, desc = "Signature Help"})
+  vim.keymap.set("n", "<leader>vy", function() vim.diagnostic.setqflist() end, {buffer = bufnr, remap = false, desc = "Set Quickfix List"})
 end
 
 lsp.on_attach(function(client, bufnr)
