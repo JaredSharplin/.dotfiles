@@ -47,7 +47,7 @@ alias gca='gc --amend'
 alias gp='git push'
 alias gpt='git push -u origin $(git_current_branch)'
 alias gwip='git add -A; git commit -n -m "WIP"'
-alias gundo='git reset HEAD~1'
+alias grh='git reset HEAD~1'
 alias lg='lazygit'
 
 # helper for git aliases
