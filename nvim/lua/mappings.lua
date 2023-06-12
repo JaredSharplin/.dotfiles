@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", {desc = "Open Nvim Tree"})
 vim.keymap.set("n", "<leader>w", ":w<CR>", {desc = "Write"})
 vim.keymap.set("n", "<leader>q", ":q<CR>", {desc = "Quit"})
-vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>", {desc = "Open LazyGit"})
+vim.keymap.set("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap = true, silent = true, desc = "Open LazyGit"})
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {desc = "Move Selection Down"})
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {desc = "Move Selection Up"})

@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>gb", ":GitBlameOpenCommitURL<CR>", {desc = "Open Git Blame Commit URL"})
+vim.keymap.set("n", "<leader>b", ":GitBlameOpenCommitURL<CR>", {desc = "Open Git Blame Commit URL"})
 
 vim.g.gitblame_display_virtual_text = 0
 vim.g.gitblame_date_format = "%b %d, %Y"
