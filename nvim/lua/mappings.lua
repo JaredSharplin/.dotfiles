@@ -16,6 +16,7 @@ vim.keymap.set("n", "n", "nzzzv", {desc = "Search Forward"})
 vim.keymap.set("n", "n", "nzzzv", {desc = "Search Backward"})
 
 vim.keymap.set("x", "<leader>p", "\"_dP", {desc = "Paste Over Selection"})
+vim.keymap.set("n", "<leader>p", "\"_dP", {desc = "Paste Over Selection"})
 vim.keymap.set("n", "<leader>d", "\"_d", {desc = "Delete Selection"})
 vim.keymap.set("v", "<leader>d", "\"_d", {desc = "Delete Selection"})
 
@@ -42,3 +43,11 @@ vim.keymap.set("n", "<leader>t", ":A<CR>", {desc = "Navigate to Test File"})
 vim.keymap.set("v", "<", "<gv", {desc = "Outdent and Reselect"})
 vim.keymap.set("v", ">", ">gv", {desc = "Indent and Reselect"})
 vim.keymap.set("n", "=", "v=", {desc = "Indent Current Line and Reselect"})
+
+vim.keymap.set("n", "<leader>o", ":set invwrap<CR>", {desc = "Toggle Wrap"})
+
+-- Vim hardmode
+-- vim.keymap.set("n", "h", "<Nop>", {noremap = true, desc = "Disable h"})
+-- vim.keymap.set("n", "j", "<Nop>", {noremap = true, desc = "Disable j"})
+-- vim.keymap.set("n", "k", "<Nop>", {noremap = true, desc = "Disable k"})
+-- vim.keymap.set("n", "l", "<Nop>", {noremap = true, desc = "Disable l"})

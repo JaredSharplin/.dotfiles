@@ -36,11 +36,7 @@ return require('packer').startup(function(use)
     config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
-      require("which-key").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
+      require("which-key").setup() 
     end
   }
 
@@ -86,12 +82,13 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  use("f-person/git-blame.nvim")
-
   use("tpope/vim-commentary")
   use("tpope/vim-surround")
   use("tpope/vim-rails")
+  use("tpope/vim-bundler")
 
+  use("f-person/git-blame.nvim")
   use("AndrewRadev/splitjoin.vim")
+  use("folke/flash.nvim")
 end)
 

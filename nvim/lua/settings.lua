@@ -4,7 +4,7 @@ local options = {
   hidden = true, -- allow hiding buffers with unsaved changes
   ignorecase = true, -- ignore case by default when searching
   number = true, -- line numbers
-  relativenumber = false, -- absolute line numbers
+  relativenumber = true, -- hybrid relative line numbers
   cursorline = true, -- highlight the current line/number
   cursorlineopt = "number", -- default: number,line
   scrolloff = 3, -- number of screen lines to keep above and below the cursor
@@ -49,3 +49,13 @@ end
 
 -- highlight on yank
 vim.cmd "au TextYankPost * silent! lua vim.highlight.on_yank {higroup='IncSearch', timeout=250}"
+
+-- auto absolute/relative line numbers on entering/leaving insert mode
+vim.cmd('autocmd! BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif')
+vim.cmd('autocmd! BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif')
+
+-- auto wrap lines for html and haml files
+vim.cmd('autocmd FileType html,haml setlocal wrap')
+
+-- do not auto wrap lines for all other files
+-- vim.cmd('autocmd FileType * setlocal nowrap')
