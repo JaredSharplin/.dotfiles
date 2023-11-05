@@ -1,9 +1,9 @@
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", {desc = "Open Nvim Tree"})
+vim.keymap.set("n", "<leader>E", ":NvimTreeFocus<CR>", {desc = "Focus Nvim Tree"})
 vim.keymap.set("n", "<leader>w", ":w<CR>", {desc = "Write"})
 vim.keymap.set("n", "<leader>q", ":q<CR>", {desc = "Quit"})
-vim.keymap.set("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap = true, silent = true, desc = "Open LazyGit"})
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {desc = "Move Selection Down"})
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {desc = "Move Selection Up"})
@@ -12,6 +12,7 @@ vim.keymap.set("n", "J", "mzJ`z", {desc = "Improved J Action"})
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz", {desc = "Half Page Down"})
 vim.keymap.set("n", "<C-u>", "<C-u>zz", {desc = "Half Page Up"})
+
 vim.keymap.set("n", "n", "nzzzv", {desc = "Search Forward"})
 vim.keymap.set("n", "n", "nzzzv", {desc = "Search Backward"})
 
@@ -44,10 +45,3 @@ vim.keymap.set("v", "<", "<gv", {desc = "Outdent and Reselect"})
 vim.keymap.set("v", ">", ">gv", {desc = "Indent and Reselect"})
 vim.keymap.set("n", "=", "v=", {desc = "Indent Current Line and Reselect"})
 
-vim.keymap.set("n", "<leader>o", ":set invwrap<CR>", {desc = "Toggle Wrap"})
-
--- Vim hardmode
--- vim.keymap.set("n", "h", "<Nop>", {noremap = true, desc = "Disable h"})
--- vim.keymap.set("n", "j", "<Nop>", {noremap = true, desc = "Disable j"})
--- vim.keymap.set("n", "k", "<Nop>", {noremap = true, desc = "Disable k"})
--- vim.keymap.set("n", "l", "<Nop>", {noremap = true, desc = "Disable l"})
