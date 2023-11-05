@@ -50,7 +50,8 @@ alias gp='git push'
 alias gpt='git push -u origin $(git_current_branch)'
 alias gwip='git add -A; git commit -n -m "WIP"'
 alias grh='git reset HEAD~1'
-alias lg='lazygit'
+alias gpo='git pull --rebase --autostash origin '
+alias gpom='gpo master'
 
 # helper for git aliases
 function git_current_branch()
