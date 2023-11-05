@@ -90,5 +90,27 @@ return require('packer').startup(function(use)
   use("f-person/git-blame.nvim")
   use("AndrewRadev/splitjoin.vim")
   use("folke/flash.nvim")
+  use("HiPhish/rainbow-delimiters.nvim")
+
+  use({
+    "m4xshen/hardtime.nvim",
+    requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+    config = function()
+      require("hardtime").setup({
+          -- Configuration here, or leave empty to use defaults
+      })
+    end
+  })
+
+  use{
+    'altermo/ultimate-autopair.nvim',
+    event={'InsertEnter','CmdlineEnter'},
+    branch='v0.6',
+    config=function()
+      require('ultimate-autopair').setup({
+        -- Configuration here
+      })
+    end,
+  }
 end)
 
