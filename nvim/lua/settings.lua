@@ -41,6 +41,7 @@ local options = {
   foldenable = false,
   foldlevel = 99, -- expand all folds by default
   foldminlines = 0,
+  foldcolumn = "1"
 }
 
 for k, v in pairs(options) do
@@ -56,6 +57,3 @@ vim.cmd('autocmd! BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu            
 
 -- auto wrap lines for html and haml files
 vim.cmd('autocmd FileType html,haml setlocal wrap')
-
--- do not auto wrap lines for all other files
--- vim.cmd('autocmd FileType * setlocal nowrap')
