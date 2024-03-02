@@ -19,7 +19,9 @@ require('telescope').setup{
       "%.lock",
       "%.txt",
       "%.x.js",
-      "%.x.x.js"
+      "%.x.x.js",
+      "db/migrate/.*",
+      "config/locales/translation.*.yml"
     },
   }
 }

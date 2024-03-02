@@ -1,6 +1,7 @@
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_filetypes = {
   ["TelescopePrompt"] = false,
+  ["markdown"] = false,
 }
 
 -- replace_keycodes = false is needed to avoid insertion of weird characters

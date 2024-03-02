@@ -3,6 +3,7 @@
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
+vim.cmd [[packadd matchit]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -86,6 +87,8 @@ return require('packer').startup(function(use)
   use("tpope/vim-surround")
   use("tpope/vim-rails")
   use("tpope/vim-bundler")
+  use("tpope/vim-repeat")
+  use("tpope/vim-fugitive")
 
   use("f-person/git-blame.nvim")
   use("AndrewRadev/splitjoin.vim")
