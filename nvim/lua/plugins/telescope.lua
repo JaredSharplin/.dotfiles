@@ -7,16 +7,6 @@ return {
       require("telescope").load_extension("fzf")
     end,
   },
-  keys = {
-    {
-      "<leader>fw",
-      -- require("telescope.builtin").grep_string,
-      function()
-        require("telescope.builtin").grep_string()
-      end,
-      desc = "Find Word Under Cursor",
-    },
-  },
   opts = {
     setup = function()
       require("telescope").setup({
