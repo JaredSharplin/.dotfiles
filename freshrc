@@ -6,6 +6,9 @@ fresh freshshell/fresh bin/fresh --bin
 # Config
 fresh config/\* --file
 
+# Use Jason's tmux config
+fresh jasoncodes/dotfiles config/tmux.conf --file
+
 # Zsh
 fresh-options --file=~/.zshrc --marker
   fresh shell/zsh/tanda.zsh
