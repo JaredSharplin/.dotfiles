@@ -10,7 +10,7 @@
 --   { desc = "Search and Replace" }
 -- )
 
-vim.keymap.set("n", "<leader>n", ":e ~/programming/payaus/.notes.md<CR>", { desc = "Open Payaus Todo File" })
+vim.keymap.set("n", "<leader>n", ":e ~/.notes.md<CR>", { desc = "Open Todo File" })
 
 if vim.g.neovide then
   vim.keymap.set("n", "<D-s>", ":w<CR>") -- Save
