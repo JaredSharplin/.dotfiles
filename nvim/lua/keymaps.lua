@@ -48,4 +48,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Open Notes File
+vim.keymap.set('n', '<leader>n', ':e ~/.notes.md<CR>', { desc = 'Open [N]otes File' })
+
 -- vim: ts=2 sts=2 sw=2 et
