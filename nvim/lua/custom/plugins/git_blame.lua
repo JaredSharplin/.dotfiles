@@ -9,7 +9,7 @@ return {
   end,
   keys = {
     {
-      '<leader>b',
+      '<leader>gb',
       ':GitBlameOpenCommitURL<CR>',
       desc = 'Git Blame Open Commit URL',
     },
