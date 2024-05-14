@@ -63,4 +63,15 @@ vim.keymap.set('n', '<leader>o', ':lua MiniFiles.open(vim.api.nvim_buf_get_name(
 -- Open Notes File
 vim.keymap.set('n', '<leader>n', ':e ~/.notes.md<CR>', { desc = 'Open [N]otes File' })
 
--- vim: ts=2 sts=2 sw=2 et
+if vim.g.neovide then
+  -- command mapping
+  vim.keymap.set({ 'i', 'n' }, '<D-a>', '<ESC>ggVG') -- select all
+  vim.keymap.set('i', '<D-s>', '<C-o>:w<CR>') -- save (insert)
+  vim.keymap.set('n', '<D-s>', ':w<CR>') -- save (normal)
+  vim.keymap.set('x', '<D-x>', '"+d') -- cut
+  vim.keymap.set('x', '<D-c>', '"+y') -- copy
+  vim.keymap.set('i', '<D-v>', '<C-r><C-o>+') -- paste (insert)
+  vim.keymap.set('n', '<D-v>', 'i<C-r><C-o>+<ESC>l') -- paste (normal)
+  vim.keymap.set('x', '<D-v>', '"+P') -- paste (visual)
+  vim.keymap.set('c', '<D-v>', '<C-r>+') -- paste (command)
+end
