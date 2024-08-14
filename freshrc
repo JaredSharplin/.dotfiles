@@ -15,6 +15,9 @@ fresh-options --file=~/.zshrc --marker
   fresh freshshell/fresh contrib/source-build.sh
 fresh-options
 
+# Alacritty
+fresh alacritty --file=~/.config/alacritty/
+
 # Neovim
 fresh nvim --file=~/.config/nvim/
 
