@@ -48,10 +48,13 @@ vim.opt.splitbelow = true
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '» ', trail = '', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
+
+-- Live show substitutions in the buffer
+vim.opt.incsearch = true
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true
@@ -62,4 +65,5 @@ vim.opt.scrolloff = 10
 -- Disable wrapping
 vim.opt.wrap = false
 
--- vim: ts=2 sts=2 sw=2 et
+-- Remove end of file ~
+vim.opt.fillchars:append ',eob: '
