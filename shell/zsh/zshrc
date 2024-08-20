@@ -15,6 +15,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
 else
     # Linux
     HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # Source Antigen
