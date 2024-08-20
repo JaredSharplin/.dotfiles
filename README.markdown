@@ -12,25 +12,30 @@ My dotfiles are managed by [fresh].
 
 ## Dependencies (not including Neovim plugins)
 
+### System Package Manager
 - [alacritty](https://github.com/alacritty/alacritty)
-- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-- [antigen](https://github.com/zsh-users/antigen)
 - [zellij](https://github.com/zellij-org/zellij)
 - [neovim](https://github.com/neovim/neovim)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
-- [Jetbrains Mono NerdFont](https://www.nerdfonts.com/font-downloads)
-- [git-town](https://github.com/git-town/git-town)
-- [asdf](https://github.com/asdf-vm/asdf)
-- [yazi](https://github.com/sxyazi/yazi)
 - [htop](https://github.com/htop-dev/htop)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
 
-### MacOS
+### Direct Download
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [Jetbrains Mono NerdFont](https://www.nerdfonts.com/font-downloads)
+- [asdf](https://github.com/asdf-vm/asdf)
+
+### Homebrew Only
+- [antigen](https://github.com/zsh-users/antigen)
+- [yazi](https://github.com/sxyazi/yazi)
+- [git-town](https://github.com/git-town/git-town)
+
+### MacOS Only
 
 - [Karabiner Elements](https://github.com/pqrs-org/Karabiner-Elements)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 
-### Linux
+### Linux Only
 
 - [keyd](https://github.com/rvaiya/keyd)
