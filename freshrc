@@ -18,6 +18,9 @@ fresh-options
 # Alacritty
 fresh alacritty --file=~/.config/alacritty/
 
+# Zellij
+fresh zellij --file=~/.config/zellij/
+
 # Neovim
 fresh nvim --file=~/.config/nvim/
 
