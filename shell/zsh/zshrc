@@ -2,7 +2,23 @@
 # Antigen
 # =================
 
-source /opt/homebrew/share/antigen/antigen.zsh
+# Detect OS and architecture to determine Homebrew path
+if [[ "$OSTYPE" == darwin* ]]; then
+    # macOS
+    if [[ "$(uname -m)" == arm* ]]; then
+        # Apple Silicon
+        HOMEBREW_PREFIX="/opt/homebrew"
+    else
+        # Intel
+        HOMEBREW_PREFIX="/usr/local"
+    fi
+else
+    # Linux
+    HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+fi
+
+# Source Antigen
+source "$HOMEBREW_PREFIX/share/antigen/antigen.zsh"
 
 # Load oh-my-zsh library
 antigen use oh-my-zsh
