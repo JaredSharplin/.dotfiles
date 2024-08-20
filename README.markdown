@@ -12,25 +12,25 @@ My dotfiles are managed by [fresh].
 
 ## Dependencies (not including Neovim plugins)
 
-- [alacritty](github.com/alacritty/alacritty)
-- [ohmyzsh](github.com/ohmyzsh/ohmyzsh)
-- [antigen](github.com/zsh-users/antigen)
-- [zellij](github.com/zellij-org/zellij)
-- [neovim](github.com/neovim/neovim)
-- [zoxide](github.com/ajeetdsouza/zoxide)
-- [Jetbrains Mono NerdFont](jetbrains.com/lp/mono/)
-- [git-town](github.com/git-town/git-town)
-- [asdf](github.com/asdf-vm/asdf)
-- [yazi](github.com/sxyazi/yazi)
-- [htop](github.com/htop-dev/htop)
-- [ripgrep](github.com/BurntSushi/ripgrep)
-- [fd](github.com/sharkdp/fd)
+- [alacritty](https://github.com/alacritty/alacritty)
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [antigen](https://github.com/zsh-users/antigen)
+- [zellij](https://github.com/zellij-org/zellij)
+- [neovim](https://github.com/neovim/neovim)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
+- [Jetbrains Mono NerdFont](https://jetbrains.com/lp/mono/)
+- [git-town](https://github.com/git-town/git-town)
+- [asdf](https://github.com/asdf-vm/asdf)
+- [yazi](https://github.com/sxyazi/yazi)
+- [htop](https://github.com/htop-dev/htop)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
 
 ### MacOS
 
-- [Karabiner Elements](github.com/pqrs-org/Karabiner-Elements)
-- [Rectangle](github.com/rxhanson/Rectangle)
+- [Karabiner Elements](https://github.com/pqrs-org/Karabiner-Elements)
+- [Rectangle](https://github.com/rxhanson/Rectangle)
 
 ### Linux
 
-- [keyd](github.com/rvaiya/keyd)
+- [keyd](https://github.com/rvaiya/keyd)
