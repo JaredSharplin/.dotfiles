@@ -2,6 +2,8 @@
 
 ## Installation
 
+Note: Ensure the main `perl` package has been installed from your system package manager.
+
 ``` sh
 FRESH_LOCAL_SOURCE=JaredSharplin/.dotfiles bash <(curl -sL get.freshshell.com)
 ```
@@ -10,7 +12,9 @@ My dotfiles are managed by [fresh].
 
 [fresh]: http://freshshell.com
 
-## Dependencies (not including Neovim plugins)
+## Dependencies
+
+Note: Not an exhaustive list, see installation instructions for additional dependencies
 
 ### System Package Manager
 - [alacritty](https://github.com/alacritty/alacritty)
