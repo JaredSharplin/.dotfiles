@@ -18,7 +18,7 @@ My dotfiles are managed by [fresh].
 - [zellij](https://github.com/zellij-org/zellij)
 - [neovim](https://github.com/neovim/neovim)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
-- [Jetbrains Mono NerdFont](https://jetbrains.com/lp/mono/)
+- [Jetbrains Mono NerdFont](https://www.nerdfonts.com/font-downloads)
 - [git-town](https://github.com/git-town/git-town)
 - [asdf](https://github.com/asdf-vm/asdf)
 - [yazi](https://github.com/sxyazi/yazi)
