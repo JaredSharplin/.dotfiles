@@ -2,8 +2,20 @@
 [user]
 	name = Jared Sharplin
 	email = jaredsharplin1@gmail.com
-# Please adapt and uncomment the following lines:
-#	name = Jared Sharplin
-#	email = jaredsharplin1@gmail.com
 [merge]
 	conflictstyle = zdiff3
+[alias]
+	append = town append
+	compress = town compress
+	contribute = town contribute
+	diff-parent = town diff-parent
+	hack = town hack
+	kill = town kill
+	observe = town observe
+	park = town park
+	prepend = town prepend
+	propose = town propose
+	rename-branch = town rename-branch
+	repo = town repo
+	set-parent = town set-parent
+	sync = town sync
