@@ -25,7 +25,7 @@ return {
       },
       -- you can enable a preset for easier configuration
       presets = {
-        -- bottom_search = true, -- use a classic bottom cmdline for search
+        bottom_search = true, -- use a classic bottom cmdline for search
         -- command_palette = true, -- position the cmdline and popupmenu together
         command_palette = false, -- position the command palette in the center
         long_message_to_split = true, -- long messages will be sent to a split
