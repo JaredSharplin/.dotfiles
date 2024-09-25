@@ -4,6 +4,9 @@
 	email = jaredsharplin1@gmail.com
 [merge]
 	conflictstyle = zdiff3
+	tool = nvimdiff
+[diff]
+	tool = nvimdiff
 [alias]
 	append = town append
 	compress = town compress
