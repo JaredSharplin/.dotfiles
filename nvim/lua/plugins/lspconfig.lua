@@ -179,6 +179,7 @@ return {
         -- tsserver = {},
         --
 
+        sorbet = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
