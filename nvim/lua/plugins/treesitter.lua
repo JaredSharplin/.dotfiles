@@ -19,6 +19,7 @@ return {
         delay = 200, -- update delay on CursorMoved and InsertLeave
       },
       indent = { enable = true, disable = { 'ruby' } },
+      endwise = { enable = true },
     },
     config = function(_, opts)
       -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
