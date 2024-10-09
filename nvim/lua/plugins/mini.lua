@@ -37,7 +37,7 @@ return {
       require('mini.bufremove').setup()
       require('mini.diff').setup()
       require('mini.files').setup()
-      require('mini.jump').setup()
+      require('mini.jump').setup { mappings = { repeat_jump = '' } } -- clashes with arrow.nvim
       require('mini.pairs').setup()
       require('mini.splitjoin').setup()
       require('mini.starter').setup()
