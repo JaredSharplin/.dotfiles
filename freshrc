@@ -24,3 +24,6 @@ fresh zellij --file=~/.config/zellij/
 # Neovim
 fresh nvim --file=~/.config/nvim/
 
+# Lazygit
+fresh lazygit --file=~/.config/lazygit/
+
