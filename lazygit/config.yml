@@ -2,7 +2,7 @@ customCommands:
   - key: 'Y'
     context: 'global'
     description: 'Git-Town sYnc'
-    command: 'git-town sync'
+    command: 'git-town sync -a'
     stream: true
     loadingText: 'Syncing'
   - key: 'U'
