@@ -7,19 +7,19 @@ if [[ "$OSTYPE" == darwin* ]]; then
     # macOS
     if [[ "$(uname -m)" == arm* ]]; then
         # Apple Silicon
-        HOMEBREW_PREFIX="/opt/homebrew"
+        HOMEBREW_PREFIX="/opt/homebrew/share/antigen/antigen.zsh"
     else
         # Intel
-        HOMEBREW_PREFIX="/usr/local"
+        ANTIGEN_PATH="/usr/local/share/antigen/antigen.zsh"
     fi
 else
-    # Linux
-    HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+    # Debian
+    ANTIGEN_PATH="/usr/share/zsh-antigen/antigen.zsh"
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # Source Antigen
-source "$HOMEBREW_PREFIX/share/antigen/antigen.zsh"
+source $ANTIGEN_PATH
 
 # Load oh-my-zsh library
 antigen use oh-my-zsh
