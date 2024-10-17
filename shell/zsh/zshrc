@@ -15,7 +15,6 @@ if [[ "$OSTYPE" == darwin* ]]; then
 else
     # Debian
     ANTIGEN_PATH="/usr/share/zsh-antigen/antigen.zsh"
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 # Source Antigen
