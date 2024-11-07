@@ -7,7 +7,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
     # macOS
     if [[ "$(uname -m)" == arm* ]]; then
         # Apple Silicon
-        HOMEBREW_PREFIX="/opt/homebrew/share/antigen/antigen.zsh"
+        ANTIGEN_PATH="/opt/homebrew/share/antigen/antigen.zsh"
     else
         # Intel
         ANTIGEN_PATH="/usr/local/share/antigen/antigen.zsh"
