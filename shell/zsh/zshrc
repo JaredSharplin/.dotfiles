@@ -45,7 +45,6 @@ antigen apply
 alias gl='glg $(git show-ref | cut -d " " -f 2 | grep -v stash$) HEAD'
 alias gsw='git show --format=fuller --stat --patch'
 alias gco='git checkout'
-alias gcp='git checkout -p'
 alias gs='git status --untracked-files=all'
 alias gst='git stash --include-untracked --keep-index'
 alias gstp='git stash pop'
@@ -65,9 +64,7 @@ alias gca='gc --amend'
 alias gcan='gcn --amend'
 alias gp='git push'
 alias gpt='git push -u origin $(git_current_branch)'
-alias gpl='git pull --ff-only'
 alias gwip='git add -A; git commit -n -m "WIP"'
-alias gpom='gpo master'
 alias grb='git rebase'
 
 # helper for git aliases
@@ -76,15 +73,11 @@ function git_current_branch()
   git symbolic-ref --short -q HEAD
 }
 
-# git add untracked
-# gau() {
-#   git ls-files --other --exclude-standard -z "$@" | xargs -0 git add -Nv
-# }
-
 # =================
 # Export
 # =================
 alias vim='nvim'
+alias lg='lazygit'
 
 export PATH=/opt/homebrew/bin:$PATH
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
