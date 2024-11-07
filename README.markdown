@@ -12,6 +12,10 @@ My dotfiles are managed by [fresh].
 
 [fresh]: http://freshshell.com
 
+These dotfiles contain a forked submodule of `kickstart.nvim` in the `nvim/` directory, which regularly pulls in upstream changes:
+- [fork](https://github.com/JaredSharplin/kickstart-modular.nvim)
+- [upstream](https://github.com/dam9000/kickstart-modular.nvim)
+
 ## Dependencies
 
 Note: Not an exhaustive list, see installation instructions for additional dependencies
@@ -24,16 +28,12 @@ Note: Not an exhaustive list, see installation instructions for additional depen
 - [htop](https://github.com/htop-dev/htop)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
-
-### Direct Download
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - [Jetbrains Mono NerdFont](https://www.nerdfonts.com/font-downloads)
 - [asdf](https://github.com/asdf-vm/asdf)
-
-### Homebrew Only
 - [antigen](https://github.com/zsh-users/antigen)
-- [yazi](https://github.com/sxyazi/yazi)
 - [git-town](https://github.com/git-town/git-town)
+- [eza](https://github.com/eza-community/eza)
 
 ### MacOS Only
 
