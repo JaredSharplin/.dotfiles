@@ -4,7 +4,7 @@ customCommands:
   - key: 'Y'
     context: 'global'
     description: 'Git-Town sYnc'
-    command: 'git-town sync -a'
+    command: 'git-town sync'
     stream: true
     loadingText: 'Syncing'
   - key: 'U'
@@ -52,7 +52,7 @@ customCommands:
       title: 'Delete current feature branch'
       body: 'Are you sure you want to delete the current feature branch?'
     stream: true
-    loadingText: 'Killing Feature Branch'
+    loadingText: 'Deleting Feature Branch'
   - key: 'p'
     context: 'localBranches'
     description: 'Git-Town Propose (creates a pull request)'
