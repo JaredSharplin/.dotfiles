@@ -1,5 +1,13 @@
 gui:
   nerdFontsVersion: "3"
+
+# delta setup
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+
+# git town setup
 customCommands:
   - key: 'Y'
     context: 'global'
