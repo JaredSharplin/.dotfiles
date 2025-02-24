@@ -11,8 +11,8 @@ git:
 customCommands:
   - key: 'Y'
     context: 'global'
-    description: 'Git-Town sYnc'
-    command: 'git-town sync'
+    description: 'Git-Town sYnc stack'
+    command: 'git-town sync -s'
     stream: true
     loadingText: 'Syncing'
   - key: 'U'
