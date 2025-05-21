@@ -78,6 +78,8 @@ function git_current_branch()
 # =================
 alias vim='nvim'
 alias lg='lazygit'
+alias ls='eza'
+alias cd='z'
 
 export PATH=/opt/homebrew/bin:$PATH
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
