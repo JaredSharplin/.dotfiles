@@ -20,26 +20,40 @@ These dotfiles contain a forked submodule of `kickstart.nvim` in the `nvim/` dir
 
 Note: Not an exhaustive list, see installation instructions for additional dependencies
 
-### System Package Manager
-- [alacritty](https://github.com/alacritty/alacritty)
-- [zellij](https://github.com/zellij-org/zellij)
-- [neovim](https://github.com/neovim/neovim)
-- [zoxide](https://github.com/ajeetdsouza/zoxide)
-- [htop](https://github.com/htop-dev/htop)
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
-- [fd](https://github.com/sharkdp/fd)
-- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-- [Jetbrains Mono NerdFont](https://www.nerdfonts.com/font-downloads)
-- [mise](https://github.com/jdx/mise)
-- [antigen](https://github.com/zsh-users/antigen)
-- [git-town](https://github.com/git-town/git-town)
-- [eza](https://github.com/eza-community/eza)
-- [diffnav](https://github.com/dlvhdr/diffnav)
+### Terminal & Shell
+- [alacritty](https://github.com/alacritty/alacritty) - Terminal emulator
+- [zellij](https://github.com/zellij-org/zellij) - Terminal multiplexer
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - Zsh framework
+- [antigen](https://github.com/zsh-users/antigen) - Zsh plugin manager
+- [Jetbrains Mono NerdFont](https://www.nerdfonts.com/font-downloads) - Font with icons
+
+### Development Tools
+- [neovim](https://github.com/neovim/neovim) - Text editor
+- [mise](https://github.com/jdx/mise) - Runtime version manager
+
+### Git Tools
+- [git-delta](https://github.com/dandavison/delta) - Enhanced git diff viewer
+- [lazygit](https://github.com/jesseduffield/lazygit) - Git TUI
+- [git-town](https://github.com/git-town/git-town) - Git workflow tool
+- [diffnav](https://github.com/dlvhdr/diffnav) - Git diff pager with file tree
+
+### GitHub Tools
+- [GitHub CLI](https://github.com/cli/cli) - GitHub command line tool
+- [gh-dash](https://github.com/dlvhdr/gh-dash) - GitHub dashboard TUI
+- [gh-notify](https://github.com/meiji163/gh-notify) - GitHub notifications CLI
+
+### System Utilities
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - Smart cd command
+- [htop](https://github.com/htop-dev/htop) - Process viewer
+- [ripgrep](https://github.com/BurntSushi/ripgrep) - Fast text search
+- [fd](https://github.com/sharkdp/fd) - Fast file finder
+- [eza](https://github.com/eza-community/eza) - Modern ls replacement
 
 ### MacOS Only
 
 - [Karabiner Elements](https://github.com/pqrs-org/Karabiner-Elements)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
+- [Dash](https://kapeli.com/dash)
 
 ### Linux Only
 
