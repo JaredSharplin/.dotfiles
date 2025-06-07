@@ -13,7 +13,7 @@ customCommands:
     context: 'global'
     description: 'Git-Town sYnc stack'
     command: 'git-town sync -s'
-    stream: true
+    output: 'log'
     loadingText: 'Syncing'
   - key: 'U'
     context: 'global'
@@ -23,13 +23,13 @@ customCommands:
     - type: 'confirm'
       title: 'Undo Last Command'
       body: 'Are you sure you want to Undo the last git-town command?'
-    stream: true
+    output: 'log'
     loadingText: 'Undoing Git-Town Command'
   - key: '!'
     context: 'global'
     description: 'Git-Town Repo (opens the repo link)'
     command: 'git-town repo'
-    stream: true
+    output: 'log'
     loadingText: 'Opening Repo Link'
   - key: 'a'
     context: 'localBranches'
@@ -39,7 +39,7 @@ customCommands:
         title: "Enter name of new child branch. Branches off of '{{.CheckedOutBranch.Name}}'"
         key: 'BranchName'
     command: 'git-town append {{.Form.BranchName}}'
-    stream: true
+    output: 'log'
     loadingText: 'Appending'
   - key: 'h'
     context: 'localBranches'
@@ -49,7 +49,7 @@ customCommands:
         title: "Enter name of new branch. Branches off of 'Main'"
         key: 'BranchName'
     command: 'git-town hack {{.Form.BranchName}}'
-    stream: true
+    output: 'log'
     loadingText: 'Hacking'
   - key: 'D'
     context: 'localBranches'
@@ -59,13 +59,13 @@ customCommands:
     - type: 'confirm'
       title: 'Delete current feature branch'
       body: 'Are you sure you want to delete the current feature branch?'
-    stream: true
+    output: 'log'
     loadingText: 'Deleting Feature Branch'
   - key: 'p'
     context: 'localBranches'
     description: 'Git-Town Propose (creates a pull request)'
     command: 'git-town propose'
-    stream: true
+    output: 'log'
     loadingText: 'Creating pull request'
   - key: 'P'
     context: 'localBranches'
@@ -75,17 +75,17 @@ customCommands:
         title: "Enter name of the for child branch between '{{.CheckedOutBranch.Name}}' and its parent"
         key: 'BranchName'
     command: 'git-town prepend {{.Form.BranchName}}'
-    stream: true
+    output: 'log'
     loadingText: 'Prepending'
   - key: 'S'
     context: 'localBranches'
     description: 'Git-Town Skip (skip branch with merge conflicts when syncing)'
     command: 'git-town skip'
-    stream: true
+    output: 'log'
     loadingText: 'Skipping'
   - key: 'G'
     context: 'files'
     description: 'Git-Town GO aka:continue (continue after resolving merge conflicts)'
     command: 'git-town continue'
-    stream: true
+    output: 'log'
     loadingText: 'Continuing'

@@ -30,7 +30,7 @@ Note: Not an exhaustive list, see installation instructions for additional depen
 - [fd](https://github.com/sharkdp/fd)
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - [Jetbrains Mono NerdFont](https://www.nerdfonts.com/font-downloads)
-- [asdf](https://github.com/asdf-vm/asdf)
+- [mise](https://github.com/jdx/mise)
 - [antigen](https://github.com/zsh-users/antigen)
 - [git-town](https://github.com/git-town/git-town)
 - [eza](https://github.com/eza-community/eza)

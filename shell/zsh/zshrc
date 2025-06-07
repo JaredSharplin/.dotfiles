@@ -31,7 +31,6 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle kiurchv/asdf.plugin.zsh
 
 # Select theme
 antigen theme robbyrussell
@@ -86,6 +85,7 @@ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$HOME/.local/bin:$PATH
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 export EDITOR='nvim'
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -94,3 +94,4 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 eval "$(zoxide init zsh)"
 eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(mise activate zsh)"
