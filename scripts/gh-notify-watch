@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# gh-notify watch script
+# Runs gh-notify every 5 minutes to check for new GitHub notifications
+# Usage: gh-notify-watch [interval]
+
+set -euo pipefail
+
+# Default interval (5 minutes)
+INTERVAL=${1:-${GH_NOTIFY_INTERVAL:-300}}
+
+# Check if gh-notify is installed
+if ! command -v gh &> /dev/null; then
+    echo "Error: GitHub CLI (gh) is not installed" >&2
+    exit 1
+fi
+
+if ! gh ext list | grep -q "gh-notify"; then
+    echo "Error: gh-notify extension is not installed" >&2
+    echo "Install with: gh ext install meiji163/gh-notify" >&2
+    exit 1
+fi
+
+while true; do
+    # Check if it's between 5:25 and 5:35 PM (stop window)
+    current_hour=$(date +%H)
+    current_minute=$(date +%M)
+    
+    if [[ $current_hour -eq 17 && $current_minute -ge 25 && $current_minute -le 35 ]]; then
+        echo "$(date): Stopping at 5:30 PM daily shutdown time"
+        exit 0
+    fi
+    
+    # Run gh-notify
+    gh notify
+    
+    sleep "$INTERVAL"
+done

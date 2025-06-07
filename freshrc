@@ -3,6 +3,9 @@
 # Handles updating fresh
 fresh freshshell/fresh bin/fresh --bin
 
+# Scripts
+fresh scripts/\* --bin
+
 # Config
 fresh config/\* --file
 
