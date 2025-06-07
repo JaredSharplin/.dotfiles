@@ -34,6 +34,7 @@ Note: Not an exhaustive list, see installation instructions for additional depen
 - [antigen](https://github.com/zsh-users/antigen)
 - [git-town](https://github.com/git-town/git-town)
 - [eza](https://github.com/eza-community/eza)
+- [diffnav](https://github.com/dlvhdr/diffnav)
 
 ### MacOS Only
 
