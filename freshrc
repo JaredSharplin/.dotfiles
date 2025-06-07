@@ -27,3 +27,6 @@ fresh nvim --file=~/.config/nvim/
 # Lazygit
 fresh lazygit --file=~/.config/lazygit/
 
+# gh-dash
+fresh gh-dash --file=~/.config/gh-dash/
+
