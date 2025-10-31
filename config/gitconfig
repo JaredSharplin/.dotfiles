@@ -15,7 +15,7 @@
 	contribute = town contribute
 	diff-parent = town diff-parent
 	hack = town hack
-	kill = town kill
+	delete = town delete
 	observe = town observe
 	park = town park
 	prepend = town prepend
@@ -28,8 +28,10 @@
 # dandavison/delta config
 [core]
 	pager = delta
+	excludesfile = ~/.global_gitignore
 [interactive]
 	diffFilter = delta --color-only
 [delta]
 	navigate = true
 	dark = true
+
