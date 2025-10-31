@@ -33,3 +33,6 @@ fresh lazygit --file=~/.config/lazygit/
 # gh-dash
 fresh gh-dash --file=~/.config/gh-dash/
 
+# Ghostty
+fresh ghostty --file=~/.config/ghostty/
+
