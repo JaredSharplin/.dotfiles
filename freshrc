@@ -18,9 +18,6 @@ fresh-options --file=~/.zshrc --marker
   fresh freshshell/fresh contrib/source-build.sh
 fresh-options
 
-# Alacritty
-fresh alacritty --file=~/.config/alacritty/
-
 # Zellij
 fresh zellij --file=~/.config/zellij/
 
