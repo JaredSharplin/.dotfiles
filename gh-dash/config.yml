@@ -2,6 +2,12 @@ prSections:
 - title: My Pull Requests
   filters: is:open author:@me
   type: null
+- title: Is Open
+  filters: is:open repo:TandaHQ/payaus
+  type: null
+- title: All
+  filters: repo:TandaHQ/payaus
+  type: null
 - title: Needs My Review
   filters: is:open review-requested:@me
   type: null
@@ -21,7 +27,7 @@ repo:
 defaults:
   preview:
     open: true
-    width: 50
+    width: 80
   prsLimit: 20
   prApproveComment: LGTM
   issuesLimit: 20
@@ -66,7 +72,8 @@ keybindings:
   issues: []
   prs: []
   branches: []
-repoPaths: {}
+repoPaths:
+  TandaHQ/*: ~/programming/*
 theme:
   ui:
     sectionsShowCount: true
